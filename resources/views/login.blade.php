@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="asset/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  @vite('resources/css/app.css')
 </head>
-<body>
-    <form id="loginForm">
-        <div>
-            <label for="username">Username :</label>
-            <input type="text" name="username" id="username">
-        </div>
-        <div>
-            <label for="password">Password :</label>
-            <input type="text" name="password" id="password">
-        </div>
-        <button type="submit">LOGIN</button>
-    </form>
+<body class="flex items-center justify-center h-screen bg-gray-100">
 
-    <script src="asset/js/login.js"></script>
+  <!-- Login Form -->
+  <div class="w-full max-w-xs p-6 bg-white rounded-lg shadow-md">
+    <form class="space-y-4">
+      <div>
+        <label for="username" class="block text-sm font-semibold text-gray-700">Username :</label>
+        <input type="text" id="username" class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-semibold text-gray-700">Password :</label>
+        <input type="password" id="password" class="w-full px-4 py-2 mt-1 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500">
+      </div>
+      <button type="submit" class="w-full py-2 mt-4 font-semibold text-white bg-green-500 rounded-md hover:bg-green-600 focus:outline-none">LOGIN</button>
+    </form>
+  </div>
+
 </body>
 </html>
-
