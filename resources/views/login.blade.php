@@ -8,7 +8,7 @@
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
 
-  <!-- Login Form -->
+  
   <div class="w-full max-w-xs p-6 bg-white rounded-lg shadow-md">
     <form class="space-y-4">
       <div>

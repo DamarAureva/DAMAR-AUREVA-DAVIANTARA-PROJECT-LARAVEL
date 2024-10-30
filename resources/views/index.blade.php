@@ -1,78 +1,227 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Damar Store</title>
-  @vite('resources/css/app.css')
-</head>
-<body class="bg-purple-900 text-white font-sans">
-  <!-- Header -->
-  <header class="flex items-center justify-between p-4 bg-purple-800">
-    <div class="text-3xl font-bold text-green-400">DAMARSTORE</div>
-    <div class="flex items-center">
-      <input type="text" placeholder="Cari Sesuatu Disini" class="px-4 py-2 text-black rounded-l-md">
-      <button class="px-4 py-2 font-semibold text-black bg-green-400 rounded-r-md">CARI</button>
-    </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Damarstore
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+    @vite('resources/css/app.css')
+  <style>
+   body {
+            background-color: #0b002b;
+            color: white;
+        }
+        .navbar a {
+            color: #00ff00;
+        }
+        .navbar a:hover {
+            color: #00cc00;
+        }
+        .search-bar input {
+            background-color: #0b002b;
+            border: 2px solid #00ff00;
+            color: white;
+        }
+        .search-bar button {
+            background-color: #00ff00;
+            color: #0b002b;
+        }
+        .section-title {
+            color: white;
+        }
+        .about-section {
+            background-color: #1a0a3d;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .about-section a {
+            color: #00ff00;
+        }
+        .about-section a:hover {
+            color: #00cc00;
+        }
+        .footer {
+            background-color: #0b002b;
+            padding: 20px;
+        }
+  </style>
+ </head>
+ <body class="font-sans">
+  <header class="navbar flex justify-between items-center p-4">
+   <div class="text-2xl font-bold">
+    <a href="#">
+     DAMARSTORE
+    </a>
+   </div>
+   <div class="search-bar flex items-center">
+    <input class="p-2 rounded-l" placeholder="Cari Sesuatu Disini" type="text"/>
+    <button class="p-2 rounded-r">
+     CARI
+    </button>
+   </div>
+   <nav class="flex space-x-4">
+    <a href="#">
+     BERANDA
+    </a>
+    <a href="#">
+     PRODUK
+    </a>
+    <a href="#">
+     TENTANG
+    </a>
+   </nav>
   </header>
-
-  <!-- Navbar -->
-  <nav class="flex justify-center gap-6 py-4 bg-purple-700">
-    <a href="#" class="text-lg font-semibold text-white hover:text-green-400">BERANDA</a>
-    <a href="#" class="text-lg font-semibold text-white hover:text-green-400">PRODUK</a>
-    <a href="#" class="text-lg font-semibold text-white hover:text-green-400">TENTANG</a>
-  </nav>
-
-  <!-- Banner -->
-  <section class="relative h-64 bg-cover bg-center" style="background-image: url('https://via.placeholder.com/800x300');">
-    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-      <p class="text-xl font-semibold">Klik Disini Untuk Slide Gambar</p>
+  <main class="p-4">
+   <section class="mb-8">
+    <div class="w-full h-64 bg-gray-800 flex items-center justify-center">
+     <span>
+      Klik Disini Untuk Slide Gambar
+     </span>
     </div>
-  </section>
-
-  <!-- Product Categories -->
-  <section class="px-4 py-8">
-    <div class="grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-6">
-      <!-- Game Cards -->
-      <div class="p-4 bg-purple-700 rounded-lg text-center">Free Fire</div>
-      <div class="p-4 bg-purple-700 rounded-lg text-center">Mobile Legends</div>
-      <div class="p-4 bg-purple-700 rounded-lg text-center">PUBG Mobile</div>
-      <div class="p-4 bg-purple-700 rounded-lg text-center">Valorant</div>
-      <div class="p-4 bg-purple-700 rounded-lg text-center">Genshin Impact</div>
-      <div class="p-4 bg-purple-700 rounded-lg text-center">Higgs Domino</div>
-    </div>
-
-    <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-6">
-      <!-- Streaming Apps -->
-      <div class="p-4 bg-green-500 rounded-lg text-center">Spotify Premium</div>
-      <div class="p-4 bg-yellow-500 rounded-lg text-center">Viu Premium</div>
-      <div class="p-4 bg-pink-500 rounded-lg text-center">Vidio Premium</div>
-      <div class="p-4 bg-blue-500 rounded-lg text-center">NimoTV</div>
-      <div class="p-4 bg-green-400 rounded-lg text-center">iQiyi Premium</div>
-      <!-- Voucher -->
-      <div class="p-4 bg-white text-black rounded-lg text-center">Garena Shell</div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="flex items-center justify-center px-4 py-8">
-    <div class="p-6 bg-purple-800 rounded-lg shadow-lg max-w-xl text-center">
-      <h2 class="text-2xl font-bold mb-4">TENTANG KAMI</h2>
-      <p class="text-base">
-        <span class="text-green-400 font-semibold">DAMARSTORE</span> adalah website yang menyediakan layanan digital seperti layanan streaming premium, voucher game, dan lain-lain. Kami berdiri sejak tahun 2023 dan telah dipercaya oleh berbagai konsumen.
+   </section>
+   <section class="mb-8">
+    <h2 class="section-title text-xl font-bold mb-4">
+     POPULER
+    </h2>
+    <div class="grid grid-cols-7 gap-4">
+     <div class="text-center">
+      <img alt="Free Fire" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/vJeWY3opZF1ddyLmnAqU4jzs28x9S8AXX9Tves9aHe0eOZvOB.jpg" width="100"/>
+      <p>
+       Free Fire
       </p>
+     </div>
+     <div class="text-center">
+      <img alt="Mobile Legends" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/odxwld4FtiY6KhvnlyS6HdD5RV64UaipMCqhbiuOVsOeJ71JA.jpg" width="100"/>
+      <p>
+       Mobile Legends
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="PUBG Mobile" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/fFO8mTlCjNWnPioiWz5bBN84iUHBJouDJqq7v1tAgno4J71JA.jpg" width="100"/>
+      <p>
+       PUBG Mobile
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Valorant" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/i7548GbI25IjFtE3xOXAqTVtPEbmvW6EiU7IDQ9VeaAeT2rTA.jpg" width="100"/>
+      <p>
+       Valorant
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Genshin Impact" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/9B6snjZSirICKZMNiSA1E7FuKtysqtex1BRD16j9k25AK71JA.jpg" width="100"/>
+      <p>
+       Genshin Impact
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="HoYoverse" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/8P7e7YKeZxmCrkAsGXnBSedhKpNI34CFm9TZdHfupdlRPZvOB.jpg" width="100"/>
+      <p>
+       HoYoverse
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Higgs Domino" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/RBOwU9k4QJZ6LV2g8EiaQI5si69VzQjOGWBtc3JzSBb9k96E.jpg" width="100"/>
+      <p>
+       Higgs Domino
+      </p>
+     </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="flex flex-col items-center py-4 bg-purple-800">
-    <div class="flex gap-4 mb-4">
-      <a href="#"><img src="https://via.placeholder.com/24x24" alt="Instagram"></a>
-      <a href="#"><img src="https://via.placeholder.com/24x24" alt="Facebook"></a>
-      <a href="#"><img src="https://via.placeholder.com/24x24" alt="GitHub"></a>
-      <a href="#"><img src="https://via.placeholder.com/24x24" alt="LinkedIn"></a>
+   </section>
+   <section class="mb-8">
+    <h2 class="section-title text-xl font-bold mb-4">
+     STREAMING APP
+    </h2>
+    <div class="grid grid-cols-6 gap-4">
+     <div class="text-center">
+      <img alt="Spotify Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/cp9R8EVft524RayeATirCo6FX1Ffte4IkEnDKACD1mePfk96E.jpg" width="100"/>
+      <p>
+       Spotify Premium
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Viu Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/3ljVoyCRoW4FPpBTOTRARUwzm9UYUJD3FBCSVG3YmjnfJ71JA.jpg" width="100"/>
+      <p>
+       Viu Premium
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Vidio Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/f7Xhcp7NIxXYEyz7S6HMwNhjWKw8JevPVv8tn9egy9dBosXnA.jpg" width="100"/>
+      <p>
+       Vidio Premium
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="NimoTV" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/6nIJefqXofIXFJ6MpiFtqjjfyAQf4dlRB7AhbhaDpoqQfk96E.jpg" width="100"/>
+      <p>
+       NimoTV
+      </p>
+     </div>
+     <div class="text-center">
+      <img alt="Iqiyi Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/7lGVq6Ii41acIl8TeIhAmc7xfrdUAexjoABmxFWby7KtnsXnA.jpg" width="100"/>
+      <p>
+       Iqiyi Premium
+      </p>
+     </div>
     </div>
-    <p class="text-sm">&copy;2023 DAMARSTORE</p>
+   </section>
+   <section class="mb-8">
+    <h2 class="section-title text-xl font-bold mb-4">
+     VOUCHER
+    </h2>
+    <div class="grid grid-cols-1 gap-4">
+     <div class="text-center">
+      <img alt="Garena Shell" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/zq93uWqHNxJOEZ0rKffX5jXu1eHFsb3WMvcmKIV6em62PZvOB.jpg" width="100"/>
+      <p>
+       Garena Shell
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="about-section text-center mb-8">
+    <h2 class="text-xl font-bold mb-4">
+     TENTANG KAMI
+    </h2>
+    <p>
+     <a href="#">
+      DAMARSTORE
+     </a>
+     adalah website yang menyediakan layanan digital seperti layanan streaming premium, voucher game, dan lain-lain. Kami berdiri sejak tahun 2023 dan telah dipercaya oleh berbagai konsumen.
+    </p>
+    <a href="{{ route('about') }}" class="text-1xl font-bold mb-4">Baca Selengkapnya</a>
+   </section>
+  </main>
+  <footer class="footer text-center">
+   <h2 class="text-xl font-bold mb-4">
+    SOSIAL MEDIA
+   </h2>
+   <div class="flex justify-center space-x-4 mb-4">
+    <a href="#">
+     <i class="fab fa-instagram text-2xl">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-facebook text-2xl">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-twitter text-2xl">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-github text-2xl">
+     </i>
+    </a>
+    <a href="#">
+     <i class="fab fa-linkedin text-2xl">
+     </i>
+    </a>
+   </div>
+   <p>
+    ©2023 DAMARSTORE
+   </p>
   </footer>
-</body>
+ </body>
 </html>
