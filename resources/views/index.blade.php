@@ -75,10 +75,8 @@
   </header>
   <main class="p-4">
    <section class="mb-8">
-    <div class="w-full h-64 bg-gray-800 flex items-center justify-center">
-     <span>
-      Klik Disini Untuk Slide Gambar
-     </span>
+    <div class="w-full h-64 flex items-center justify-center">
+    <img alt="Free Fire" class="h-64" src="asset\slide-1.jpg"/>
     </div>
    </section>
    <section class="mb-8">
@@ -87,43 +85,37 @@
     </h2>
     <div class="grid grid-cols-7 gap-4">
      <div class="text-center">
-      <img alt="Free Fire" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/vJeWY3opZF1ddyLmnAqU4jzs28x9S8AXX9Tves9aHe0eOZvOB.jpg" width="100"/>
+      <img alt="Free Fire" class="mx-auto" height="100" src="asset\ff.png" width="100"/>
       <p>
        Free Fire
       </p>
      </div>
      <div class="text-center">
-      <img alt="Mobile Legends" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/odxwld4FtiY6KhvnlyS6HdD5RV64UaipMCqhbiuOVsOeJ71JA.jpg" width="100"/>
+      <img alt="Mobile Legends" class="mx-auto" height="100" src="asset/mlbb.jpg" width="100"/>
       <p>
        Mobile Legends
       </p>
      </div>
      <div class="text-center">
-      <img alt="PUBG Mobile" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/fFO8mTlCjNWnPioiWz5bBN84iUHBJouDJqq7v1tAgno4J71JA.jpg" width="100"/>
+      <img alt="PUBG Mobile" class="mx-auto" height="100" src="asset/pubgm.jpg" width="100"/>
       <p>
        PUBG Mobile
       </p>
      </div>
      <div class="text-center">
-      <img alt="Valorant" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/i7548GbI25IjFtE3xOXAqTVtPEbmvW6EiU7IDQ9VeaAeT2rTA.jpg" width="100"/>
+      <img alt="Valorant" class="mx-auto" height="100" src="asset/valorant.jpg" width="100"/>
       <p>
        Valorant
       </p>
      </div>
      <div class="text-center">
-      <img alt="Genshin Impact" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/9B6snjZSirICKZMNiSA1E7FuKtysqtex1BRD16j9k25AK71JA.jpg" width="100"/>
+      <img alt="Genshin Impact" class="mx-auto" height="100" src="asset/GenshinImpact.jpg" width="100"/>
       <p>
        Genshin Impact
       </p>
      </div>
      <div class="text-center">
-      <img alt="HoYoverse" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/8P7e7YKeZxmCrkAsGXnBSedhKpNI34CFm9TZdHfupdlRPZvOB.jpg" width="100"/>
-      <p>
-       HoYoverse
-      </p>
-     </div>
-     <div class="text-center">
-      <img alt="Higgs Domino" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/RBOwU9k4QJZ6LV2g8EiaQI5si69VzQjOGWBtc3JzSBb9k96E.jpg" width="100"/>
+      <img alt="Higgs Domino" class="mx-auto" height="100" src="asset/higgs_domino.jpg" width="100"/>
       <p>
        Higgs Domino
       </p>
@@ -136,31 +128,31 @@
     </h2>
     <div class="grid grid-cols-6 gap-4">
      <div class="text-center">
-      <img alt="Spotify Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/cp9R8EVft524RayeATirCo6FX1Ffte4IkEnDKACD1mePfk96E.jpg" width="100"/>
+      <img alt="Spotify Premium" class="mx-auto" height="100" src="asset/spotify.png" width="100"/>
       <p>
        Spotify Premium
       </p>
      </div>
      <div class="text-center">
-      <img alt="Viu Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/3ljVoyCRoW4FPpBTOTRARUwzm9UYUJD3FBCSVG3YmjnfJ71JA.jpg" width="100"/>
+      <img alt="Viu Premium" class="mx-auto" height="100" src="asset/viu.jpg" width="100"/>
       <p>
        Viu Premium
       </p>
      </div>
      <div class="text-center">
-      <img alt="Vidio Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/f7Xhcp7NIxXYEyz7S6HMwNhjWKw8JevPVv8tn9egy9dBosXnA.jpg" width="100"/>
+      <img alt="Vidio Premium" class="mx-auto" height="100" src="asset/vidio.png" width="100"/>
       <p>
        Vidio Premium
       </p>
      </div>
      <div class="text-center">
-      <img alt="NimoTV" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/6nIJefqXofIXFJ6MpiFtqjjfyAQf4dlRB7AhbhaDpoqQfk96E.jpg" width="100"/>
+      <img alt="NimoTV" class="mx-auto" height="100" src="asset/NimoTv.png" width="100"/>
       <p>
        NimoTV
       </p>
      </div>
      <div class="text-center">
-      <img alt="Iqiyi Premium" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/7lGVq6Ii41acIl8TeIhAmc7xfrdUAexjoABmxFWby7KtnsXnA.jpg" width="100"/>
+      <img alt="Iqiyi Premium" class="mx-auto" height="100" src="asset/iqiyi.png" width="100"/>
       <p>
        Iqiyi Premium
       </p>
@@ -173,7 +165,7 @@
     </h2>
     <div class="grid grid-cols-1 gap-4">
      <div class="text-center">
-      <img alt="Garena Shell" class="mx-auto" height="100" src="https://storage.googleapis.com/a1aa/image/zq93uWqHNxJOEZ0rKffX5jXu1eHFsb3WMvcmKIV6em62PZvOB.jpg" width="100"/>
+      <img alt="Garena Shell" class="mx-auto" height="100" src="asset/garena_shells.jpg" width="100"/>
       <p>
        Garena Shell
       </p>
